@@ -1,0 +1,194 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.934);
+    color: white;
+}
+
+/* globle */
+h1 {
+    text-align: center;
+    /* background-color: green; */
+    text-shadow: 2px 2px 10px black;
+}
+
+/* globle end */
+
+
+
+/* background */
+
+.background {
+    position: absolute;
+    z-index: -1;
+    display: flex;
+
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.background .child {
+
+    width: 50%;
+}
+
+.background .child:nth-child(2) {
+    background-color: green;
+}
+
+/* background end */
+
+
+
+
+/* player card */
+.playerCard {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.inputGroup input {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    margin: 2rem .5rem;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 1rem;
+    background-color: black;
+    border: 2px solid red;
+}
+
+.inputGroup input:nth-child(2) {
+    border: 2px solid blue;
+}
+
+.playerCard button {
+    font-size: 1rem;
+    padding: .5rem 3rem;
+    border: 2px solid aliceblue;
+    border-radius: 1rem;
+    color: aliceblue;
+    background-color: rgb(11, 11, 11);
+}
+
+.center-btn button {
+    padding: .5rem 4rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: white;
+    border: 2px solid rgb(186, 186, 186);
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0.825);
+}
+
+.playerCard button:hover {
+    background-color: rgb(0, 222, 0);
+    color: black;
+}
+
+/* player card end */
+
+
+/* game crad */
+.gameCard {
+    padding-top: 2rem;
+    border-left: 2px solid red;
+    border-bottom: 2px solid red;
+    border-top: 2px solid blue;
+    border-right: 2px solid blue;
+    /* box-shadow: 0px 0px 4px aliceblue inset;  */
+    height: 100vh;
+
+}
+
+.totalOutput {
+
+    padding: 0px 3rem;
+    gap: 3rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.gameCard .displayAlert {
+    height: 3rem;
+    margin-top: 2rem;
+    /* background-color: red; */
+
+}
+
+.gameCard .main {
+    margin-top: 3rem;
+}
+
+
+
+
+
+.col {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.parentBox {
+    background-color: black;
+    height: 6rem;
+    width: 6rem;
+    border: 1px solid aliceblue;
+    box-shadow: 0px 0px 10px blueviolet;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+
+}
+
+#output {
+    /* border: 2px solid red; */
+    height: 5rem;
+}
+
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.d-none {
+    display: none;
+}
+
+.alert {
+    padding: 2rem;
+
+}
+
+
+
+.alert-primary {
+    color: blue;
+}
+
+.alert-danger {
+    color: red;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./phone.css">
+
+</head>
+
+<body>
+    <div class="background">
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+
+
+    <div id="playerCard" class="playerCard">
+        <div class="inputGroup">
+
+            <input required id="player1Name" placeholder="player 1 name" type="text">
+            <input required id="player2Name" placeholder="player 2 name" type="text">
+        </div>
+
+        <button onclick="playGame() , parentBoxAnimation()"> Lets Start</button>
+    </div>
+
+
+
+
+
+    <div id="gameCard" class=" gameCard d-none">
+
+
+        <div class="totalOutput">
+
+
+            <h3 style="color: red;"><span id="player1show"></span> Total Win :
+
+                <span id="redTotalWins">0</span>
+            </h3>
+            <h3 style="color: blue;"><span id="player2show"></span>
+                Total Win :
+
+                <span id="blueTotalWins">0</span>
+            </h3>
+            <h3>
+                Draw :
+
+                <span id="totalDraw">0</span>
+            </h3>
+            <h3>
+                Total Matches :
+
+                <span id="total">0</span>
+            </h3>
+
+        </div>
+        <div id="displayAlert" class="displayAlert">
+
+        </div>
+
+        <!-- <div class="inputGroup">
+
+        <input type="text" placeholder="assign red" id="playerRed">
+        <input type="text" placeholder="assign blue" id="playerBlue">
+         </div> -->
+        <!-- <div class="center-btn"><button onclick="assignTeam()">Done</button></div> -->
+
+        <!-- <div id="output"></div> -->
+        <div class="main">
+            <div class="col">
+                <div class="parentBox">
+
+                    <div id="box1" onclick="game('#box1')" class="box"></div>
+                </div>
+                <div class="parentBox">
+
+                    <div id="box2" onclick="game('#box2')" class="box"></div>
+                </div>
+                <div class="parentBox">
+
+                    <div id="box3" onclick="game('#box3')" class="box"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="parentBox">
+
+                    <div id="box4" onclick="game('#box4')" class="box"></div>
+                </div>
+                <div class="parentBox">
+
+                    <div id="box5" onclick="game('#box5')" class="box"></div>
+                </div>
+                <div class="parentBox">
+
+                    <div id="box6" onclick="game('#box6')" class="box"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="parentBox">
+
+                    <div id="box7" onclick="game('#box7')" class="box"></div>
+                </div>
+                <div class="parentBox">
+
+                    <div id="box8" onclick="game('#box8')" class="box"></div>
+                </div>
+                <div class="parentBox">
+
+                    <div id="box9" onclick="game('#box9')" class="box"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
