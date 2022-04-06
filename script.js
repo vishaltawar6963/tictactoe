@@ -145,6 +145,7 @@ function resetGame() {
     totalMatch++
 
 
+
     displayData()
     addToLocalStorage()
     resetAnime()
@@ -156,17 +157,22 @@ function displayData() {
     document.querySelector("#total").innerHTML = totalMatch
     document.querySelector("#totalDraw").innerHTML = draw
 
+    var str;
+    if (!winner) {
+        str = `<h1 class= " alert alert-dark">match draw</>`
+    } else {
+        str = `<h1 class= " alert ${winner === 'red' ? "alert-danger" : "alert-primary"}">${winner} is winner</h1>`
 
-    addAlert()
-
-
-}
-function addAlert() {
-    console.log(winner);
-
-    document.querySelector("#displayAlert").innerHTML = `<h1 class="alert">${winner} is winner</h1>`
+    }
+    document.querySelector("#displayAlert").innerHTML = str
     setTimeout(removeAlert, 2000)
+
+    winner = undefined
+
+
+
 }
+
 function removeAlert() {
     document.querySelector("#displayAlert").innerHTML = ""
 
